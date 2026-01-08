@@ -3,27 +3,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Blog Title</title>
   <subtitle>This is a longer description about your blog.</subtitle>
-  <link href="https://example.com/deadburgweb/feed/feed.xml" rel="self" />
-  <link href="https://example.com/deadburgweb/" />
+  <link href="https://example.com/feed/feed.xml" rel="self" />
+  <link href="https://example.com/" />
   <updated>2022-03-15T00:00:00Z</updated>
-  <id>https://example.com/deadburgweb/</id>
+  <id>https://example.com/</id>
   <author>
     <name>Your Name</name>
   </author>
   <entry>
     <title>Deadburg is out now on PC!</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-it-out-now-on-pc/" />
+    <link href="https://example.com/posts/deadburg-it-out-now-on-pc/" />
     <updated>2022-03-15T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-it-out-now-on-pc/</id>
+    <id>https://example.com/posts/deadburg-it-out-now-on-pc/</id>
     <content type="html">&lt;p&gt;What are you doing? Reading? No time for reading when the game is available you know...&lt;/p&gt;
 &lt;iframe src=&quot;https://store.steampowered.com/widget/671640/&quot; width=&quot;646&quot; height=&quot;190&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 </content>
   </entry>
   <entry>
     <title>Deadburg is releasing on March 15th!</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-is-releasing-on-march-15th/" />
+    <link href="https://example.com/posts/deadburg-is-releasing-on-march-15th/" />
     <updated>2022-02-17T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-is-releasing-on-march-15th/</id>
+    <id>https://example.com/posts/deadburg-is-releasing-on-march-15th/</id>
     <content type="html">&lt;p&gt;Deadburg will be releasing on March 15th. The Steam store page is live and you can wishlist the game now.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://store.steampowered.com/app/671640/Deadburg/&quot;&gt;Deadburg Steam Page&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;With release in sight, the public test signups will be closing down at the end of the week. So if you want to test pre-release please follow the instructions below! Signups close on 2/19.&lt;/p&gt;
@@ -32,9 +32,9 @@
   </entry>
   <entry>
     <title>Deadburg PC Update - 2022</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-pc-update-2022/" />
+    <link href="https://example.com/posts/deadburg-pc-update-2022/" />
     <updated>2022-02-01T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-pc-update-2022/</id>
+    <id>https://example.com/posts/deadburg-pc-update-2022/</id>
     <content type="html">&lt;p&gt;Hey Folks,&lt;/p&gt;
 &lt;p&gt;Updates are coming to Deadburg in 2022!&lt;/p&gt;
 &lt;p&gt;The Steam test that started back in 2017 will be getting updates. The primary goal of these updates is to fix bugs and polish the existing state of the game. There may be some features added during that process as well. Overall I want something people can play reliability if they want to recreate the original Xbox 360 experience on PC. Due to the technology used to create this version of the game it will not be coming to consoles. The first of these updates pushed out earlier today bringing a revamped networking architecture that should reduce de-sync issues.&lt;/p&gt;
@@ -48,17 +48,17 @@
   </entry>
   <entry>
     <title>Deadburg PC Update - Test Signup Closed!</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-pc-update-test-signup-closed/" />
+    <link href="https://example.com/posts/deadburg-pc-update-test-signup-closed/" />
     <updated>2018-05-14T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-pc-update-test-signup-closed/</id>
+    <id>https://example.com/posts/deadburg-pc-update-test-signup-closed/</id>
     <content type="html">&lt;p&gt;Quick update, I&#39;ve just given out the last key from the first phase of testing.  I&#39;ll be opening another phase later this summer.  It&#39;ll be announced here and on twitter.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>Deadburg PC Update - April</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-pc-update-april/" />
+    <link href="https://example.com/posts/deadburg-pc-update-april/" />
     <updated>2018-05-02T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-pc-update-april/</id>
+    <id>https://example.com/posts/deadburg-pc-update-april/</id>
     <content type="html">&lt;p&gt;Hey Folks,&lt;/p&gt;
 &lt;p&gt;Quick update regarding progress.  We&#39;re continuing to release patches to the Steam test/beta.  I&#39;m almost out of keys for the test, so if you want to participate make sure to sign up soon!&lt;/p&gt;
 &lt;p&gt;Once this set of keys is all used up I&#39;m going to be closing the test until later this summer.  The schedule for the next few months is going to be a little slow, as I&#39;m working on larger items.  Once these bigger pieces are in testing will open back up with more keys.&lt;/p&gt;
@@ -72,9 +72,9 @@
   </entry>
   <entry>
     <title>Deadburg PC Update - December</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-pc-update-december/" />
+    <link href="https://example.com/posts/deadburg-pc-update-december/" />
     <updated>2018-01-02T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-pc-update-december/</id>
+    <id>https://example.com/posts/deadburg-pc-update-december/</id>
     <content type="html">&lt;p&gt;Here&#39;s a quick update for December.  Let me know if you still read these posts now that the test version is out.  I may change the focus of these updates to be more in depth about upcoming features.&lt;/p&gt;
 &lt;h1 id=&quot;features-added-this-past-month&quot;&gt;Features added this past month&lt;/h1&gt;
 &lt;p&gt;So this month had two &amp;quot;big&amp;quot; patches and a few bug fixes patches.  Only a couple big features were added due to the holidays.&lt;/p&gt;
@@ -93,9 +93,9 @@
   </entry>
   <entry>
     <title>Deadburg PC Update - November</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-pc-update-november/" />
+    <link href="https://example.com/posts/deadburg-pc-update-november/" />
     <updated>2017-12-02T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-pc-update-november/</id>
+    <id>https://example.com/posts/deadburg-pc-update-november/</id>
     <content type="html">&lt;p&gt;The first month of the private test is over!  Here&#39;s some quick status.&lt;/p&gt;
 &lt;h1 id=&quot;bugs-feedback-crashes-and-more-bugs&quot;&gt;Bugs, Feedback, Crashes and more Bugs&lt;/h1&gt;
 &lt;p&gt;So far I&#39;ve had 219 bugs/crashes or feedback reported.  I&#39;ve pushed out roughly 30 builds through steam.  Lots of bugs have been fixed, some new bugs have been introduced.  Thank you to all of the folks who have reported bugs, given feedback and/or sent crash data.  Those actions are what help me fix issues ASAP.&lt;/p&gt;
@@ -125,9 +125,9 @@
   </entry>
   <entry>
     <title>Deadburg PC Update - October</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-pc-update-october/" />
+    <link href="https://example.com/posts/deadburg-pc-update-october/" />
     <updated>2017-10-31T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-pc-update-october/</id>
+    <id>https://example.com/posts/deadburg-pc-update-october/</id>
     <content type="html">&lt;p&gt;The private beta is here!&lt;/p&gt;
 &lt;h2 id=&quot;private-beta-test&quot;&gt;Private Beta Test&lt;/h2&gt;
 &lt;p&gt;Last night I started sending out keys for the private beta.  A small change from my last post is that you&#39;ll need to friend the &amp;quot;reanimatedgames&amp;quot; steam account in order to get a key.  I&#39;m checking the account periodically to accept friend requests and send out keys.&lt;/p&gt;
@@ -148,20 +148,20 @@
   </entry>
   <entry>
     <title>Deadburg PC Update - September</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-pc-update-september/" />
+    <link href="https://example.com/posts/deadburg-pc-update-september/" />
     <updated>2017-10-06T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-pc-update-september/</id>
+    <id>https://example.com/posts/deadburg-pc-update-september/</id>
     <content type="html">&lt;p&gt;Hey Folks!&lt;/p&gt;
 &lt;p&gt;We&#39;re getting close to the private test.  Here&#39;s the big things I worked on this month.  Take a look at the end of the post for some information on when the private test will start.&lt;/p&gt;
 &lt;h2 id=&quot;character-animations&quot;&gt;Character Animations&lt;/h2&gt;
 &lt;p&gt;So in my last post I mentioned some issues I was having getting the animations necessary for testing.  Since then Mixamo has been fixed and I&#39;m now working on getting all of the animations working in game.  The process involves getting animations for all of the primary actions, which are generally movement.  And then animations for secondary actions, like holding objects or using them.  Then we combine those animations in game to show the character.  Here&#39;s an example of what that will look like.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/10/AnimationCombo.gif&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-september/4s-ctEtoXN-652.webp 652w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-september/4s-ctEtoXN-652.gif&quot; alt=&quot;&quot; width=&quot;652&quot; height=&quot;370&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/10/AnimationCombo.gif&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-september/4s-ctEtoXN-652.webp 652w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/posts/deadburg-pc-update-september/4s-ctEtoXN-652.gif&quot; alt=&quot;&quot; width=&quot;652&quot; height=&quot;370&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;So in this case we&#39;re taking a walking animation and combining it with an animation of holding a rifle.   I&#39;m also moving the head up and down, so I can give a better idea of where the player is looking.  It&#39;s not a perfect solution, but it allows me to animate the characters better without needing to have separate animations for each combination of object and movement.  The included animations will be for test only.  In this case you can see the stock animation deforms the wrist of the model pretty bad.&lt;/p&gt;
 &lt;p&gt;There&#39;s one item missing from the above gif, the actual items.  That&#39;s generally the final step in getting a working animation into the game, making sure all of items position themselves appropriately.  I&#39;ve got a separate application I use to fine tune the position of the items on the character, which I&#39;m doing as I bring in the new animtions.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/10/CharacterWithItem.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-september/gMpwQoiyRT-296.avif 296w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-september/gMpwQoiyRT-296.webp 296w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-september/gMpwQoiyRT-296.png&quot; alt=&quot;&quot; width=&quot;296&quot; height=&quot;382&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/10/CharacterWithItem.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-september/gMpwQoiyRT-296.avif 296w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-september/gMpwQoiyRT-296.webp 296w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/posts/deadburg-pc-update-september/gMpwQoiyRT-296.png&quot; alt=&quot;&quot; width=&quot;296&quot; height=&quot;382&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;bug-feedback-reporting&quot;&gt;Bug/Feedback Reporting&lt;/h2&gt;
 &lt;p&gt;Last month I showed the crash reporting system, but not every issue in the game will cause a crash.  I&#39;ve added a bug reporting system in game to cover the other types of issues.  Simply press B+U+G at the same time to bring it up.  You can then give a short description of the bug and a screenshot will be sent along with it.  You can also just send feedback if you think something should be improved or changed.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/10/BugReport.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-september/bNU4MCXW5G-1064.avif 1064w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-september/bNU4MCXW5G-1064.webp 1064w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-september/bNU4MCXW5G-1064.png&quot; alt=&quot;&quot; width=&quot;1064&quot; height=&quot;633&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/10/BugReport.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-september/bNU4MCXW5G-1064.avif 1064w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-september/bNU4MCXW5G-1064.webp 1064w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/posts/deadburg-pc-update-september/bNU4MCXW5G-1064.png&quot; alt=&quot;&quot; width=&quot;1064&quot; height=&quot;633&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;private-beta-test&quot;&gt;Private Beta Test&lt;/h2&gt;
 &lt;p&gt;So I can now announce that the beta test will start on &lt;strong&gt;10/31&lt;/strong&gt;!  In order to participate you&#39;ll need to join the following Steam Group.  All members of the group will be given a key they can use to install the game.  All you need is a Windows PC and a Steam account.&lt;/p&gt;
 &lt;p&gt;Join the group here!&lt;/p&gt;
@@ -170,23 +170,23 @@
   </entry>
   <entry>
     <title>Deadburg PC Update - August</title>
-    <link href="https://example.com/deadburgweb/posts/deadburg-pc-update-august/" />
+    <link href="https://example.com/posts/deadburg-pc-update-august/" />
     <updated>2017-08-31T00:00:00Z</updated>
-    <id>https://example.com/deadburgweb/posts/deadburg-pc-update-august/</id>
+    <id>https://example.com/posts/deadburg-pc-update-august/</id>
     <content type="html">&lt;p&gt;Hello Folks,&lt;/p&gt;
 &lt;p&gt;We&#39;re getting closer and closer to have a test build ready.  Here&#39;s some of what I&#39;ve been working on this month.&lt;/p&gt;
 &lt;h2 id=&quot;character-models-in-game&quot;&gt;Character Models In Game&lt;/h2&gt;
 &lt;p&gt;So last update I talked about the new character models.  This month was about getting them in game.  I wasn&#39;t able to complete that process entirely, but we do have them rendering in game with the appropriate shadows/coloring.  The last issue to resolve is to get them animating properly per player input.  I was hoping to have this done already, but I&#39;ve hit a snag with the system I&#39;m using (Mixamo) that&#39;s preventing me from getting all of the test animations I need.  Hopefully the issue will be resolved and I can get them in soon.  Note these will be test animations only, they will not be final.&lt;/p&gt;
 &lt;p&gt;In the screenshot below you can see one of the characters in game.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/08/CharacterInGame.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/mU-QN7Sz5p-573.avif 573w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/mU-QN7Sz5p-573.webp 573w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/mU-QN7Sz5p-573.png&quot; alt=&quot;&quot; width=&quot;573&quot; height=&quot;729&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/08/CharacterInGame.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-august/mU-QN7Sz5p-573.avif 573w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-august/mU-QN7Sz5p-573.webp 573w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/posts/deadburg-pc-update-august/mU-QN7Sz5p-573.png&quot; alt=&quot;&quot; width=&quot;573&quot; height=&quot;729&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;steam-multiplayer-working&quot;&gt;Steam Multiplayer Working&lt;/h2&gt;
 &lt;p&gt;So the above screenshot was made possible by having two players in the same game via Steam&#39;s matchmaking service.  This is an item that&#39;s been in the works for a while, with bits and pieces being done.   This month I was finally able to put it all together.  It&#39;s based on Steam&#39;s P2P network layer, so it should be able to deal with routers and related issues without having to open up specific ports.  The goal is to replace this with a full Server/Client implementation at some point during Early Access.&lt;/p&gt;
 &lt;h2 id=&quot;female-models&quot;&gt;Female Models&lt;/h2&gt;
 &lt;p&gt;I got a question last update about female characters in Deadburg.  The work done on specing the models was done with female models in mind.  I&#39;m not sure if all of the final animations/models for female characters will be done at the same time as male characters, but it&#39;s something I&#39;m working to include.  The closed test may not have a female model initially for example.  Here&#39;s a shot of the female test model.  Again none of the current models/animations are final.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/08/Female.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/T49vUpySmt-548.avif 548w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/T49vUpySmt-548.webp 548w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/T49vUpySmt-548.png&quot; alt=&quot;&quot; width=&quot;548&quot; height=&quot;816&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/08/Female.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-august/T49vUpySmt-548.avif 548w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-august/T49vUpySmt-548.webp 548w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/posts/deadburg-pc-update-august/T49vUpySmt-548.png&quot; alt=&quot;&quot; width=&quot;548&quot; height=&quot;816&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;crash-reporting&quot;&gt;Crash Reporting&lt;/h2&gt;
 &lt;p&gt;So I&#39;ve mentioned this in the past, but wanted to circle back now that it&#39;s implemented in the game and working.  Basically if the game crashes you should see a pop-up like below.  This will give you the option to send us information about the error.  It also includes some basic information about your system, like your CPU, GPU, RAM, and OS information.  It does not send any personal information or information that could be used to identify you or your PC.  You do not need to send this information if you don&#39;t want to, you can simply exit out of the reporter.  The process of sending the information does not require your e-mail or any account.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/08/CrashReporter.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/kxaC16p97z-691.avif 691w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/kxaC16p97z-691.webp 691w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/deadburgweb/posts/deadburg-pc-update-august/kxaC16p97z-691.png&quot; alt=&quot;&quot; width=&quot;691&quot; height=&quot;339&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://45.63.37.167/deadburg/wp-content/uploads/2017/08/CrashReporter.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-august/kxaC16p97z-691.avif 691w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/posts/deadburg-pc-update-august/kxaC16p97z-691.webp 691w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/posts/deadburg-pc-update-august/kxaC16p97z-691.png&quot; alt=&quot;&quot; width=&quot;691&quot; height=&quot;339&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;closed-testing-update&quot;&gt;Closed Testing Update&lt;/h2&gt;
 &lt;p&gt;There are two &amp;quot;big&amp;quot; items in the way of the closed tests starting.  The first is getting all of the test animations in for the player character.  I know the Mixamo folks are working on the issue, but they haven&#39;t provided a specific ETA.  The other issue is that there&#39;s a good chance I&#39;ll be moving here shortly, and if so I&#39;ll probably want to get that done before starting testing.  So I don&#39;t have to go dark for a few weeks during the move.  My goal is that the September update is announcing a date for the start of closed testing.&lt;/p&gt;
 &lt;p&gt;The closed test will be mostly open to any current fans of Deadburg.  There will be information here along with the various social media accounts.  And if you joined the mailing list you&#39;ll get an update there.  It will be a closed test in that you will need a code from me to join, but as stated, everyone who wants one should get one.&lt;/p&gt;
