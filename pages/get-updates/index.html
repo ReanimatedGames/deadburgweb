@@ -1,0 +1,580 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Get updates!</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="/deadburgweb/feed/feed.xml" type="application/atom+xml" title="Deadburg">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family-design: "Motiva Sans", Sans-serif;
+	--font-family-title: "Lato";
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--color-black: #000000;
+	--color-white: #fff;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-black);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+
+	--hover-color: #41a62a;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: var(--color-black);
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: var(--color-black);
+
+		--background-color: #fe8210;
+		--foreground-color: #ffffff;
+
+
+		--body-background-color: #f5f5f5;
+		--sidebar-background-color: #000000;
+
+
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	
+	margin: 0;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--body-background-color);
+	
+}
+html {
+	overflow-y: scroll;
+}
+
+.motiva{
+	font-family: "Motiva Sans", Sans-serif;
+}
+
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato{
+	font-family: "Lato", sans-serif;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+  display:flex;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+	/*font-family: "Fugaz One";*/
+}
+
+main,
+footer {
+	background-color: var(--foreground-color);
+}
+
+footer{
+	margin: 0;
+	clear: both;
+	width: 100%;
+}
+
+.p-footer{
+	margin: 0 auto;
+	width: 20%;
+}
+
+
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	background-color: var(--foreground-color);
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	font-family: var(--font-family-title);
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+
+.post-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 300;
+	font-family: var(--font-family-title);
+	text-decoration: none;
+}
+.post-link:hover {
+	color: var(--hover-color);
+}
+
+a.mini-link {
+	text-decoration: underline;
+	color: var(--color-white);
+}
+a.mini-link:hover {
+	color: var(--hover-color);
+}
+
+.entry-title{
+	font-size: 26px;
+	font-family: var(--font-family-title);
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.page-title{
+	font-size: 26px;
+	font-family: var(--font-family-title);
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+#main_content{
+	clear:both;
+	display:flex;
+}
+
+#primary{	
+	flex:3;
+	background-color: var(--color-white);
+}
+
+#secondary{
+	flex:1;
+	font-size: 12px;
+	background-color: var(--sidebar-background-color);
+	color: var(--color-white);
+	padding: 1em;
+}
+
+#content{
+	margin: 0 auto;
+  	width: 80%;
+}
+
+#built-with{
+	background: #f9f9f9;
+  	border-top: 1px solid #ddd;
+  	color: #666;
+  	font-size: 12px;
+  	line-height: 2.2em;
+  	padding: 2.2em 0.5em;
+  	text-align: center;
+}
+
+#page{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+nav{
+	
+	line-height: 1.625;
+	width: 100%;
+	background-color: var(--color-black);
+	clear: both;
+	display: block;
+	float: left;
+}
+
+/* Nav */
+.nav {
+	gap: .5em 1em;
+	padding: 0;
+	list-style: none;
+	margin: 0 7.6%;
+	font-size: 13px;
+	color: var(--foreground-color);
+	background-color: var(--color-black);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+}
+.nav-item {
+	font-family: var(--font-family-design);
+	font-size: 100%;
+	line-height: 1.625;
+	float: right;
+	position: relative;
+	box-sizing: content-box;
+}
+
+
+
+.site:before {
+		background-color: #000;
+		content: "";
+		display: block;
+		height: 100%;
+		min-height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 182px;
+		z-index: 2;
+	}
+
+.nav-item:hover{
+	background-color: var(--hover-color);
+}
+
+.nav-item a{
+	line-height:3.333em;
+	display: block;
+	padding: 0 1.2125em;
+}
+
+
+a.nav-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 300;
+	font-family: var(--font-family-title);
+	text-decoration: none;
+	color: var(--color-white);
+}
+
+a.nav-link:link:hover {
+	color: var(--color-white);
+}
+
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+a.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	text-decoration: none;
+	
+	color: var(--color-white);
+}
+
+a.postlist-link:hover{
+	color: #41a62a;
+	text-decoration: none;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+
+#reanimated-games{
+	margin: 1% 7.6%;
+}
+
+.small-post{
+	padding: 2em;
+	margin: 0 auto;
+
+	border-bottom: 1px solid #ddd;
+}
+
+.small-page{
+
+	padding: 2em;
+	margin: 0 auto;
+}
+
+
+.credits-page{
+
+	padding: 2em;
+	margin: 0 auto;
+	text-align: center;
+}</style>
+		
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<div id="page">
+			<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+
+			<header>
+				<a href="/deadburgweb/"><picture><source type="image/avif" srcset="/deadburgweb/.11ty/image/?src=content%5Cassets%5Ccropped-LibraryLogo2.png&width=1260&format=avif&via=transform 1260w"><source type="image/webp" srcset="/deadburgweb/.11ty/image/?src=content%5Cassets%5Ccropped-LibraryLogo2.png&width=1260&format=webp&via=transform 1260w"><img loading="lazy" decoding="async" src="/deadburgweb/.11ty/image/?src=content%5Cassets%5Ccropped-LibraryLogo2.png&width=1260&format=png&via=transform" alt="Deadburg" width="1260" height="176"></picture></a>
+			</header>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href="/deadburgweb/pages/youtube-policy/">YOUTUBE POLICY</a></li>
+					<li class="nav-item"><a class="nav-link" href="/deadburgweb/privacy/">PRIVACY</a></li>
+					<li class="nav-item"><a class="nav-link" href="/deadburgweb/pages/screenshots/">SCREENSHOTS</a></li>
+					<li class="nav-item"><a class="nav-link" href="/deadburgweb/pages/ideasfeedback/">IDEAS/FEEDBACK?</a></li>
+					<li class="nav-item"><a class="nav-link" href="/deadburgweb/pages/help/">HELP!</a></li>
+					<li class="nav-item"><a class="nav-link" href="/deadburgweb/pages/credits/">CREDITS</a></li>
+				</ul>
+			</nav>
+
+			<main id="main">
+				<heading-anchors>
+					<div id="main_content">
+						<div id="secondary">
+							
+							
+							<h4 id="recent-posts">RECENT POSTS</h4>
+
+							
+							
+							<ul class="postlist">
+	<li class="postlist-item">
+		<a href="/deadburgweb/posts/deadburg-it-out-now-on-pc/" class="postlist-link">Deadburg is out now on PC!</a>
+	</li>
+	<li class="postlist-item">
+		<a href="/deadburgweb/posts/deadburg-is-releasing-on-march-15th/" class="postlist-link">Deadburg is releasing on March 15th!</a>
+	</li>
+	<li class="postlist-item">
+		<a href="/deadburgweb/posts/deadburg-pc-update-2022/" class="postlist-link">Deadburg PC Update - 2022</a>
+	</li>
+</ul>
+
+
+							
+							
+							<p>33 more posts in <a class="mini-link" href="/deadburgweb/blog/">the archive</a>.</p>
+							
+
+							
+							
+
+							<a class="mini-link" href="feed/feed.xml">RSS Feed</a>
+						</div>
+
+						<div id="primary">
+							<div id="content">
+								
+<div class="small-page">
+    <h1 class="page-title" id="get-updates">Get updates!</h1>
+
+    <p>Want the latest news/updates about Deadburg? Sign up for the mailing list.</p>
+<p>Subscribe to our mailing list</p>
+
+</div>
+
+							</div>
+						</div>
+					</div>
+				</heading-anchors>
+			</main>
+
+			<footer>
+				<div id="built-with">
+					<p class="p-footer">
+						<em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.2</a></em>
+					</p>
+				</div>
+			</footer>
+		</div>
+
+		<!-- This page `/pages/get-updates/` was built on 2026-01-08T01:25:00.396Z -->
+		<script type="module" src="/deadburgweb/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>
