@@ -72,7 +72,6 @@
 	navigation: auto;
 }
 
-html,
 body {
 	
 	margin: 0;
@@ -80,9 +79,6 @@ body {
 	color: var(--text-color);
 	background-color: var(--body-background-color);
 	
-}
-html {
-	overflow-y: scroll;
 }
 
 .motiva{
@@ -289,25 +285,34 @@ a.mini-link:hover {
 
 #main_content{
 	clear:both;
-	display:flex;
+
+	display: grid;
+  	grid-template-columns: 1fr; /* Single column by default (mobile) */
+  	gap: 20px; /* Space between columns */
+	justify-content: start;
+}
+
+/* Switches to two columns on screens wider than 768px */
+@media (min-width: 768px) {
+  #main_content {
+    grid-template-columns: 0.3fr 1fr; /* Two equal columns */
+  }
 }
 
 #primary{	
-	flex:3;
 	background-color: var(--color-white);
 }
 
 #secondary{
-	flex:1;
 	font-size: 12px;
 	background-color: var(--sidebar-background-color);
 	color: var(--color-white);
 	padding: 1em;
+	display: none;
 }
 
 #content{
-	margin: 0 auto;
-  	width: 80%;
+
 }
 
 #built-with{
@@ -504,6 +509,58 @@ a.postlist-big-link:hover{
 	margin: 0 auto;
 	text-align: center;
 }
+
+
+/* Mobile: Hidden menu, visible hamburger */
+.menu-toggle { display: block; }
+.nav { display: none; flex-direction: column; }
+
+/* ADD THIS NEW RULE */
+.nav.active {
+  display: flex; /* Shown only when JavaScript toggles the 'active' class */
+}
+
+/* Container for the bars */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Space between bars */
+  padding: 10px;
+}
+
+
+/* Desktop: Visible horizontal menu, hidden hamburger */
+@media (min-width: 768px) {
+  .menu-toggle { display: none; }
+  .nav { display: flex; flex-direction: row; }
+  #secondary{display:block;}
+}
+
+
+/* The individual bars */
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #DDD; /* Icon color */
+  border-radius: 2px;
+  transition: all 0.15s ease-in-out; /* Smooth animation */
+}
+
+/* ANIMATION: Turn into an 'X' when active */
+.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.active .bar:nth-child(2) {
+  opacity: 0; /* Hide middle bar */
+}
+
+.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -688,7 +745,16 @@ pre[class*="language-diff-"] {
 			</header>
 			<nav>
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
-				<ul class="nav">
+
+				
+				<!-- Hamburger button for mobile only -->
+				<button class="menu-toggle" id="mobile-menu-btn" aria-label="Open Menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+
+				<ul class="nav" id="nav-list">
 					<li class="nav-item"><a class="nav-link" href="/pages/youtube-policy/">YOUTUBE POLICY</a></li>
 					<li class="nav-item"><a class="nav-link" href="/privacy/">PRIVACY</a></li>
 					<li class="nav-item"><a class="nav-link" href="/pages/screenshots/">SCREENSHOTS</a></li>
@@ -767,7 +833,10 @@ pre[class*="language-diff-"] {
 			</footer>
 		</div>
 
-		<!-- This page `/posts/patch-1-1-1-in-review/` was built on 2026-01-08T03:24:02.526Z -->
-		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+		<!-- This page `/posts/patch-1-1-1-in-review/` was built on 2026-01-09T23:12:26.887Z -->
+		<script type="module" src="/dist/OIX-V5zXjF.js"></script>
+
+		
+		
 	</body>
 </html>
